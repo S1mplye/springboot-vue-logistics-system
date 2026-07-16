@@ -25,3 +25,19 @@
 
 
 ## 项目结构
+├── logistics-backend # Spring Boot 后端服务
+├── logistics-frontend # Vue2 前端项目
+└── sql # MySQL 建表脚本
+
+
+## 本地运行说明
+### 后端启动
+1.  新建 MySQL 数据库，导入 `sql/logistics_system.sql` 建表脚本
+2.  修改 `logistics-backend/src/main/resources/application.yml` 中的数据库连接地址、账号密码
+3.  IDEA 打开 backend 目录，启动主类 `LogisticsSystemApplication`
+
+### 前端启动
+1.  进入 `logistics-frontend` 目录
+2.  执行 `npm install` 安装依赖
+3.  执行 `npm run serve` 启动前端服务
+
